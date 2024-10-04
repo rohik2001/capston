@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar-vertical">
+<a href="#">Home</a>
+<a href="#">Football</a>
+<a href="#">Basketball</a>
+<a href="#">Tenis</a>
+<a href="#">Olympic</a>
+<a href="#" data-bs-toogle="modal" data-bs-target="#loginmodal">Login</a>
+    </div>
+
+    <div class="container-content">
+        <div class="header">
+            <h1>Sports News</h1>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-8 main-news">
+                    <h2></h2>
+                    
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw8a2elQ2qNx_segNhzhUn71gJ_pvJ7LIz4w&s" alt="Soccer Finals" id="img1">
+                <p class="mt-3">The soccer finals were nothing short of spectacular as teams clashed in a battle of skill and strategy. 
+                    Fans were on the edge of their seats as the final whistle blew, marking the end of an exhilarating match. 
+                    With goals from both sides, the game was a testament to the players' dedication and hard work.</p>
+                </div>
+
+                <div class="col-lg-4 sidebar">
+                    <h3>Recent News</h3>
+<ul class="list-group">
+    <li class="list-group-item" onclick="showNews(1)">Basketball Championship</li>
+    <li class="list-group-item" onclick="showNews(2)">Tennis Grand Slam</li>
+    <li class="list-group-item" onclick="showNews(3)">merathon World Record</li>
+    <li class="list-group-item" onclick="showNews(4)">Olympic Highlight</li>
+    <li class="list-group-item" onclick="showNews(5)">Cricket World cup</li>
+</ul>
+
+                </div>
+            </div>
+
+            <!-- Professional News Section with Four Columns -->
+            <div class="news-section">
+                <h3>Professional News Update</h3>
+                <div class="row">
+                    <div class="col-md-3 news-card">
+                        <div class="card mb-3">
+                            <img src="https://e3.365dm.com/24/07/768x432/skynews-carlos-alcaraz-wimbledon_6626186.jpg?20240714165254" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Article 1</h5>
+                                <p class="card-text">Brief summary of the news article.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+          <div class="col-md-3 news-card">
+            <div class="card mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsipjoFax8E2jJ8mpzsL6ot369kWwVep_DZg&s" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Article 3</h5>
+                    <p class="card-text">Brief summary of the news article.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+          </div>
+<div class="col-md-3 news-card">
+    <div class="card mb-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsipjoFax8E2jJ8mpzsL6ot369kWwVep_DZg&s" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Article 3</h5>
+            <p class="card-text">Brief summary of the news article.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+          </div>
+<div class="col-md-3 news-card">
+    <div class="card mb-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsipjoFax8E2jJ8mpzsL6ot369kWwVep_DZg&s" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Article 3</h5>
+            <p class="card-text">Brief summary of the news article.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+          </div>
+<div class="row news-section">
+    <div class="col-12">
+        <h3>Top players</h3>
+        <div id="carouselExampleIndigator" class="carousel-slide">
+            <div class="carousel-indigator">
+                <button type="button" data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                 class="active" aria-current="true" aria-label="Slide 2"></button>
+                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  class="active" aria-current="true" aria-label="Slide 3"></button>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
